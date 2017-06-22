@@ -1,4 +1,4 @@
-# Binary Background
+# Binary Background 
 
 Normally, a programmer can think in terms of base ten numbers. 
 
