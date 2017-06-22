@@ -53,5 +53,6 @@ public class MathFunctions {
         System.out.println("A random int produced by our new randomGenerator is " + random2);
 
 
+
     }
 }

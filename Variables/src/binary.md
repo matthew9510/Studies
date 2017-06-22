@@ -18,3 +18,4 @@ Check out this visual ![Binary](Images/binary.JPG)
 The compiler **translates** decimal numbers into binary numbers ***before*** storing the number into a memory location. 
 
 **For example:** The compiler would convert the decimal number 212 to the binary number 11010100, meaning **(1 * 128) + (1 * 64) + (0 * 32) + (1 * 16) + (0 * 8) + (1 * 4) + (0 * 2) + (0 * 1)**, and stores that **binary number** in memory.
+
