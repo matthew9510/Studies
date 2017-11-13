@@ -24,7 +24,7 @@ public class PrimitiveTypes_AndConversions {
             bool = false;
 
         yum = 127;
-        System.out.println("Declarations that might not have been initiated will cause a compile time error ");
+        System.out.println("Declarations that might not have been initiated will cause a compile time error. ");
 
         if(bool == true && yum > 126)
             System.out.println("The value of yum is " + yum);

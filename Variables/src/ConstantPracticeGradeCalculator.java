@@ -46,11 +46,10 @@ public class ConstantPracticeGradeCalculator {
         double finalScore = (double) scnr.nextInt();
         coursePercentage += (finalScore / FINAL_MAX) * FINAL_WEIGHT;
         coursePercentage *= 100; // Make the value a %percentage
-        System.out.println("Your course Percentage is " + coursePercentage);
+        System.out.println("Your course percentage is " + coursePercentage);
 
         /*
-         * MORE WORK TO BE DONE
-         * Handle multiple midterms and consider if Homework should be included
+         * Handle multiple midterms and consider if homework should be included
          * Research IllegalArgumentException() vs IllegalParameterException()
          */
     }

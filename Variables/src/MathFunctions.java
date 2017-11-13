@@ -28,8 +28,8 @@ public class MathFunctions {
         pointsDistance = Math.sqrt(Math.pow((x2- x1), 2) + Math.pow((y2 - y1), 2));
         System.out.println("Points distance: " + pointsDistance);
 
-        /* Tree Height Section */
 
+        /* Tree Height Section */
         /* Simple geometry can compute the height of an object from the the object's shadow length and shadow angle
         using the formula: tan(angleElevation) = treeHeight / shadowLength. Given the shadow length and angle of
         elevation, compute the tree height. */
@@ -51,8 +51,5 @@ public class MathFunctions {
         Random randomGenerator = new Random();
         int random2 = randomGenerator.nextInt();
         System.out.println("A random int produced by our new randomGenerator is " + random2);
-
-
-
     }
 }
