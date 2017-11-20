@@ -32,7 +32,7 @@ public class Staff extends Person{
         return department;
     }
 
-    public double pay() { // No return... is this an error?
+    public double pay() {
         throw new RuntimeException("Not yet implemented!");
     }
 
