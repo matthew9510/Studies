@@ -1,5 +1,5 @@
 public class Television implements IElectronicDevice{
-    private int volume;
+    private int volume; // member variables remain but function calls will not be available
 
 	public int getVolume() {
 		return this.volume;
@@ -20,10 +20,10 @@ public class Television implements IElectronicDevice{
     public void volumeDown(){
         int currentVolume;
         if(volume != 0){
-            currentVolume = getVolume();
+            currentVolume = getVolume(); // internal 
             setVolume(--currentVolume);
         }
-        System.out.println("Volume level is " + getVolume());
+        System.out.println("Television volume level is " + getVolume());
     }
 
     public void volumeUp(){
@@ -32,7 +32,7 @@ public class Television implements IElectronicDevice{
             currentVolume = getVolume();
             setVolume(++currentVolume);
         }
-        System.out.println("Volume level is " + getVolume());
+        System.out.println("Television volume level is " + getVolume());
     }
 
 }

@@ -18,6 +18,8 @@ public class Zoo{
         
         // crow2.fly(); Note: crow2 can't access crow Object methods because of the reference type 
         
+       // Fish fish3 = (Fish)fish2;
+
         Animal [] animals = {fish2, bird2, chick2, crow2};
         moveAnimals(animals);
     }

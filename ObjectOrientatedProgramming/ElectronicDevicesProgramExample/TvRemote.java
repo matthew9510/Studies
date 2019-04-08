@@ -1,5 +1,6 @@
 public class TvRemote{
-    public static Television getDevice(){
+    
+    public static IElectronicDevice getDevice(){
         return new Television();
     }
 }
