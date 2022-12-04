@@ -1,6 +1,7 @@
-from binary_search_tree import BinarySearchTree
+from binarySearchTree import BinarySearchTree
 
 bst = BinarySearchTree(2)
+
 # Insertion 1 set test case
 # bst.insert_node(1)
 # bst.insert_node(3)
