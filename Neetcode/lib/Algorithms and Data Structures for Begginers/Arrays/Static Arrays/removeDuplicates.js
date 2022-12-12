@@ -122,5 +122,5 @@ function removeDuplicates(arr = [0, 0, 1, 1, 1, 2, 2, 3, 4, 4, 4]) {
     return leftPointer;
 }
 exports.removeDuplicates = removeDuplicates;
-removeDuplicates();
+// removeDuplicates();
 //# sourceMappingURL=removeDuplicates.js.map
