@@ -32,12 +32,60 @@ class BinarySearchTree {
 
         return root;
     }
+
+    remove(val: number) {
+        this.root = this.removeNode(this.root, val)
+    }
+
+    findMin(root: BinarySearchTreeNode | null): BinarySearchTreeNode | null {
+        let curr = root;
+
+        while (curr && curr.left !== null) {
+            curr = curr.left;
+        }
+        return curr;
+    }
+
+    removeNode(root: BinarySearchTreeNode | null, val: number): null | BinarySearchTreeNode {
+        // If tree is empty
+        if (root === null) {
+            return root;
+        }
+
+        if (root.val && val < root.val) {
+            root.left = this.removeNode(root.left, val);
+        } else if (root.val && val > root.val) {
+            root.right = this.removeNode(root.right, val);
+        } else {
+            // Check if node to be removed has one child
+            if (root.left === null) {
+                return root.right;
+            } else if (root.right === null) {
+                return root.left;
+            }
+            // If node to be removed has two children
+            else {
+                let minNode = this.findMin(root.right)
+                if (minNode && minNode.val !== null) {
+                    root.val = minNode.val;
+                    this.removeNode(root.right, minNode.val);
+                }
+            }
+
+        }
+        return root;
+    }
 }
 
 const tree = new BinarySearchTree()
 
-tree.insert(1);
-tree.insert(2);
+tree.insert(4);
 tree.insert(3);
+tree.insert(2);
+tree.insert(6)
+tree.insert(5)
+tree.insert(7)
+console.log(tree.root);
 
-console.log(tree.root)
+tree.remove(4)
+console.log(tree.root);
