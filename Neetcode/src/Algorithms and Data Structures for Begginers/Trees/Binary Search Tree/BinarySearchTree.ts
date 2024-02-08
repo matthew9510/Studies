@@ -75,6 +75,36 @@ class BinarySearchTree {
         }
         return root;
     }
+
+    inOrderTraversal(root: BinarySearchTreeNode | null){
+        if(!root){
+            return
+        }
+
+        this.inOrderTraversal(root.left)
+        console.log(root.val);
+        this.inOrderTraversal(root.right)
+    }
+
+    preOrderTraversal(root: BinarySearchTreeNode | null){
+        if(!root){
+            return
+        }
+       
+        console.log(root.val);
+        this.preOrderTraversal(root.left)
+        this.preOrderTraversal(root.right)
+    }
+
+    postOrderTraversal(root: BinarySearchTreeNode | null){
+        if(!root){
+            return
+        }
+       
+        this.postOrderTraversal(root.left)
+        this.postOrderTraversal(root.right)
+        console.log(root.val);
+    }
 }
 
 const tree = new BinarySearchTree()
@@ -85,7 +115,14 @@ tree.insert(2);
 tree.insert(6)
 tree.insert(5)
 tree.insert(7)
-console.log(tree.root);
+console.log(tree.root)
+// tree.remove(4)
+// console.log("\nAfter removal of 4")
+// console.log(tree.root)
 
-tree.remove(4)
-console.log(tree.root);
+console.log('\nin order:')
+tree.inOrderTraversal(tree.root)
+console.log('\npre order:')
+tree.preOrderTraversal(tree.root)
+console.log('\npost order:')
+tree.postOrderTraversal(tree.root)

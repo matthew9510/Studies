@@ -32,6 +32,7 @@ class Queue {
         // Remove left node and return value
         const val = this.left.val;
         this.left = this.left.next;
+        // If there was only 1 value in the queue before we dequeued we will need to reset right pointer
         if (!this.left) {
             this.right = null;
         }
@@ -48,3 +49,8 @@ class Queue {
         console.log(s)
     }
 }
+
+const queue = new Queue()
+queue.enqueue(1)
+queue.enqueue(2)
+queue.dequeue()
