@@ -3,3 +3,5 @@
 .vscode/
 .idea/
 .idea/workspace.xml
+*.map
+NeetCode/lib*
