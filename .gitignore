@@ -1,2 +1,4 @@
 *.DS_Store
-Neetcode/node_modules/
+**/node_modules/
+.vscode/
+.idea/
